@@ -8,4 +8,4 @@ permalink: /config/
 last-update: 14/8/2020
 ---
 
-{% include partials/config.html %}
+{% include partials/Config.html %}
