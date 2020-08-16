@@ -45,7 +45,7 @@
 {% if page.url contains "helpers" %}
 <script>
     $(document).ready(function () {
-        $.get("/helpers/helpers.json", function(data){
+        $.get("{{site.base_url}}/helpers/helpers.json", function(data){
             data.forEach(function (helper) {
                 let html = `<div class="card m-3">
   <div class="card-header">
@@ -59,7 +59,7 @@
 <pre class="language-php"><code>${Prism.highlight(helper.use, Prism.languages.php, 'php')}</code></pre>
 </li>`
                 else
-                    html += `<li class="list-group-item"><a href="${helper.use}">take a look</a> </li>`
+                    html += `<li class="list-group-item"><a href="{{site.base_url}}${helper.use}">take a look</a> </li>`
 
                 html +=`</ul>
 </div>`
