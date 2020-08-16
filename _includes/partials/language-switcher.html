@@ -1,0 +1,54 @@
+<article class="docs-article">
+    <section class="docs-header">
+        <h1 class="docs-heading">Language Switcher<span class="docs-time">Last updated: {{ page.last-update }}</span></h1>
+        <p> use builtin method or create your owen language switcher .</p>
+    </section>
+    <section class="docs-section">
+        <h1 class="section-heading">How to use</h1>
+        <p>
+            Learn How you can using languages switcher. <br>
+            LOGATY Allow visitors to select his own language in easy.
+        </p>
+    </section>
+    <section class="docs-section">
+        <p>
+            Logaty included 2 different switching types.
+        </p>
+        <ol>
+            <li>&lt;ul&gt; element</li>
+            <li>&lt;select&gt; element</li>
+        </ol>
+    </section>
+
+    <section class="docs-code-block">
+        {% capture switchCode %}{% include code/switch.md %}{% endcapture %}
+        {{ switchCode | markdownify }}
+    </section>
+</article>
+
+<article class="docs-article">
+    <section class="docs-header">
+        <h1 class="docs-heading">Create Custom Switch</h1>
+        <p>
+            Create your own language switcher. <br>
+            LOGATY Allow you to create your own language switcher.
+        </p>
+    </section>
+
+    <section class="docs-code-block">
+        {% capture customSwitchCode %}{% include code/custom-switch.md %}{% endcapture %}
+        {{ customSwitchCode | markdownify }}
+    </section>
+
+    <section class="docs-section">
+        <p>
+            Learn more about <a href="/helpers/">Helpers</a>
+        </p>
+        <ul>
+            <li>logaty()->enabled()</li>
+            <li>logaty()->nameN($lang)</li>
+            <li>logaty()->name($lang)</li>
+            <li>and more helpers !</li>
+        </ul>
+    </section>
+</article>

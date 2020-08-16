@@ -1,0 +1,20 @@
+theme: logaty-documentation
+
+title: Logaty
+
+base_url: '/'
+
+links:
+  github: anzawi
+  twitter: anzawi
+  download: https://github.com/logaty
+
+plugins:
+  - jekyll-gist
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      nav-exclude: false
