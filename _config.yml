@@ -2,7 +2,7 @@ theme: logaty-documentation
 
 title: Logaty
 
-base_url: '/'
+base_url: 'https://anzawi.github.io/logaty-docs/'
 
 links:
   github: anzawi
