@@ -18,7 +18,7 @@
 
     function initSearch() {
         var request = new XMLHttpRequest();
-        request.open('GET', "{{ site.base_url }}assets/js/search-data.json", true);
+        request.open('GET', "https://anzawi.github.io/logaty-docs/assets/js/search-data.json", true);
 
         request.onload = function () {
             if (request.status >= 200 && request.status < 400) {
