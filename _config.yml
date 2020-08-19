@@ -7,7 +7,7 @@ base_url: 'https://anzawi.github.io/logaty-docs/'
 links:
   github: anzawi
   twitter: anzawi
-  download: https://github.com/logaty
+  download: https://github.com/anzawi/logaty
 
 plugins:
   - jekyll-gist
