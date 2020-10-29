@@ -1,18 +1,18 @@
 ```php
 // <ul> element
-echo logaty()->switch->ul();
+echo logaty()->switcher->ul();
 ```
 ```php
 // <select> element
-echo logaty()->switch->select();
+echo logaty()->switcher->select();
 ```
 <br>
 examples with output!
 
 ```php
 <?php
-    echo logaty()->switch->ul(); #output 1
-    echo logaty()->switch->select(); #output 2
+    echo logaty()->switcher->ul(); #output 1
+    echo logaty()->switcher->select(); #output 2
 ```
 ```html
 <!-- output 1 -->
