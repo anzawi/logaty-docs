@@ -1,0 +1,36 @@
+<article class="docs-article">
+    <section class="docs-header">
+        <h1 class="docs-heading">Configuration files <span class="docs-time">Last updated: {{ page.last-update }}</span></h1>
+    </section>
+    <section class="docs-intro">
+        <p>Find Config Files, Click on file to see content. </p>
+    </section>
+    <section class="docs-section">
+       {% include partials/parts/config.html %}
+    </section>
+</article>
+
+<article class="docs-article">
+    <section class="docs-header">
+        <h1 class="docs-heading">Get configuration values</h1>
+    </section>
+    <section class="docs-intro">
+        <p>How to use Configuration its easy to get configuration values!</p>
+    </section>
+    <section class="docs-section">
+        {% capture getConfig %} {% include code/getConfig.md %} {% endcapture %}
+        {{ getConfig | markdownify }}
+    </section>
+</article>
+
+<article class="docs-article">
+    <section class="docs-header">
+        <h1 class="docs-heading">Create Your Own Configuration</h1>
+    </section>
+    <section class="docs-intro">
+        <p>you can create extra configurations if your application (website) need</p>
+    </section>
+    <section class="docs-section">
+       {% include partials/parts/create-config.html %}
+    </section>
+</article>

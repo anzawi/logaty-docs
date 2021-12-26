@@ -1,0 +1,38 @@
+<ul class="guides">
+    <li class="guide has-figure">
+        <div class="columns">
+            <div class="column">
+                <h5>Create Translation Files</h5>
+                <p>inside LOGATY directory go to -local/languages- directory <br> &amp; create files looks like figure.</p>
+            </div>
+            <div class="column"><img src="{{ '/assets/images/language-directory.PNG' | absolute_url }}" alt=""></div>
+        </div>
+    </li>
+    <li class="guide">
+        <div class="columns">
+            <div class="column">
+                <h5>Set Translation</h5>
+                <p>return array from each files (home.php)<br>
+                    {% capture getTranslation %} {% include code/quick-start-get-trans.md %} {% endcapture %}
+                    {{ getTranslation | markdownify }}
+                </p>
+            </div>
+            <div class="column">
+                {% capture getTranslationAdv %} {% include code/quick-start-get-trans-adv.md %} {% endcapture %}
+                {{ getTranslationAdv | markdownify }}
+            </div>
+        </div>
+    </li>
+    <li class="guide">
+        <div class="columns">
+            <div class="column">
+                <h5>Get Translation</h5>
+                <p>return translation as selected language or as language parameter you send</p>
+            </div>
+            <div class="column">
+                {% capture getTranslationRet %} {% include code/quick-start-get-trans-ret.md %} {% endcapture %}
+                {{ getTranslationRet | markdownify }}
+            </div>
+        </div>
+    </li>
+</ul>
