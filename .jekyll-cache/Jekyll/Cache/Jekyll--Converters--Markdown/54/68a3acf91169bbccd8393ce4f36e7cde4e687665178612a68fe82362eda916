@@ -1,0 +1,81 @@
+I"«<article class="docs-article">
+    <section class="docs-header">
+        <h1 class="docs-heading">Link's &amp; URL's <span class="docs-time">Last updated: 26/12/2021</span></h1>
+        <p>Create Link &amp; URL with selected language OR force it to other language . </p>
+    </section>
+    <section class="docs-section">
+        <h1 class="section-heading">Introduction</h1>
+        <p>
+            <kbd>Link</kbd> class helps you to create links &amp; url's with language parameter in easy.<br />
+            you can find <kbd>Links class</kbd> in <kbd>./Logaty/Helpers/Link.php</kbd><br />
+            there's only one public method called <kbd>create($link = '', $lang = ''$)</kbd>.<br />
+            this class helps you to clean url and rebuild it to set language parameter in easy.
+        </p>
+    </section>
+</article>
+
+<article class="docs-article">
+    <section class="docs-header">
+        <h1 class="docs-heading">Create Links</h1>
+        <p class="docs-overview">
+            build url's &amp; link with LOGATY <br />
+            <strong>one function do everything. </strong>
+        </p>
+    </section>
+    <section class="docs-code-block">
+        
+        <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">link</span><span class="o">-&gt;</span><span class="nf">create</span><span class="p">(</span><span class="nv">$link</span> <span class="o">=</span> <span class="s1">''</span><span class="p">,</span> <span class="nv">$lang</span> <span class="o">=</span> <span class="s1">''</span><span class="p">);</span>
+</code></pre></div></div>
+
+    </section>
+    <section class="docs-section">
+        <kbd>$link</kbd> (Optional) the link you want to generate (or slug) .<br />
+        <kbd>$lang</kbd> (Optional) the language for generated link.<br />
+        <hr />
+        IF <kbd>$link</kbd> parameter not sent (send empty string) that create link to same page.<br />
+        IF <kbd>$lang</kbd> parameter not sent that create link to current language.<br />
+    </section>
+
+    <section class="docs-code-block">
+        <h3 class="section-heading">Examples:</h3>
+        
+        <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"&lt;?php echo logaty()-&gt;link-&gt;create('', $language_code) ?&gt;"</span><span class="nt">&gt;</span>My Link<span class="nt">&lt;/a&gt;</span>
+
+// real example
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"&lt;?php echo logaty()-&gt;link-&gt;create('', 'en') ?&gt;"</span><span class="nt">&gt;</span>this page in english language<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>Generate Link to other Page with selected language</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"&lt;?php echo logaty()-&gt;link-&gt;create('my_link') ?&gt;"</span><span class="nt">&gt;</span>
+    <span class="cp">&lt;?php logaty()-&gt;__("My Link")?&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+
+// real example
+
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"&lt;?php echo logaty()-&gt;link-&gt;create('/about_me') ?&gt;"</span><span class="nt">&gt;</span>
+    <span class="cp">&lt;?php logaty()-&gt;__("Go to About me Page in selected Language")?&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>Generate Link to other Page with forced language</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"&lt;?php echo logaty()-&gt;link-&gt;create('my_link', 'lang-code') ?&gt;"</span><span class="nt">&gt;</span>
+    <span class="cp">&lt;?php logaty()-&gt;__("My Link")?&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+
+// real example
+
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"&lt;?php echo logaty()-&gt;link-&gt;create('/about_me', 'ar') ?&gt;"</span><span class="nt">&gt;</span>
+    <span class="cp">&lt;?php logaty()-&gt;__("Go to About me Page in Arabic Language")?&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+    </section>
+</article>
+:ET

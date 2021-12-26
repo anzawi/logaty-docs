@@ -1,0 +1,16 @@
+I"|<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * Languages local code 4-digits
+   optional config we dont use it any where!
+ */</span>
+<span class="k">return</span> <span class="p">[</span>
+	<span class="s1">'ar'</span> <span class="o">=&gt;</span> <span class="s1">'ar'</span><span class="p">,</span>
+	<span class="s1">'en'</span> <span class="o">=&gt;</span> <span class="s1">'en-US'</span><span class="p">,</span>
+	<span class="s1">'de'</span> <span class="o">=&gt;</span> <span class="s1">'de_DE'</span><span class="p">,</span>
+	<span class="s1">'fr'</span> <span class="o">=&gt;</span> <span class="s1">'fr_FR'</span><span class="p">,</span>
+	<span class="s1">'pt'</span> <span class="o">=&gt;</span> <span class="s1">'es_ES'</span><span class="p">,</span>
+	<span class="s1">'ro'</span> <span class="o">=&gt;</span> <span class="s1">'ro_RO'</span><span class="p">,</span>
+	<span class="s1">'te'</span> <span class="o">=&gt;</span> <span class="s1">'te-TE'</span><span class="p">,</span>
+<span class="p">];</span>
+</code></pre></div></div>
+:ET

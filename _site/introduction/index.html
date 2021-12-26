@@ -155,7 +155,7 @@
     <div class="container">
         <article class="docs-article" id="intro-section">
     <section class="docs-header">
-        <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 14/8/2020</span></h1>
+        <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 26/12/2021</span></h1>
         <section class="docs-intro">
             <p><strong>LOGATY</strong> is a PHP Library which can help you rapidly develop your next Multilingual Website. <br />It can be used for CMS, Companies Site's, Personal site's, frameworks, etc.It has a lot of useful <br />
                 components to reduce the burden of create a Multilingual website for your next website.</p>
@@ -232,14 +232,12 @@
                 
                 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
     <span class="c1">// as selected language</span>
-    <span class="cm">/* 1 */</span> <span class="k">echo</span> <span class="nf">logaty</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">);</span>
-    <span class="cm">/* 2 */</span> <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">_x</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">);</span>
-    <span class="cm">/* 3 echo directly */</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">__</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">);</span>
+    <span class="cm">/* 1 */</span> <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">_x</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">);</span>
+    <span class="cm">/* 2 echo directly */</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">__</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">);</span>
 
     <span class="c1">// as given language parameter</span>
-    <span class="cm">/* 1 */</span> <span class="k">echo</span> <span class="nf">logaty</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">,</span> <span class="s1">'en'</span><span class="p">);</span>
-    <span class="cm">/* 2 */</span> <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">_x</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">,</span> <span class="s1">'ar'</span><span class="p">);</span>
-    <span class="cm">/* 3 echo directly */</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">__</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">,</span> <span class="s1">'en'</span><span class="p">);</span>
+    <span class="cm">/* 1 */</span> <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">_x</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">,</span> <span class="s1">'ar'</span><span class="p">);</span>
+    <span class="cm">/* 2 echo directly */</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">__</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">,</span> <span class="s1">'en'</span><span class="p">);</span>
 
 <span class="cp">?&gt;</span>
 </code></pre></div></div>

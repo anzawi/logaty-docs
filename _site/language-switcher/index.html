@@ -155,7 +155,7 @@
     <div class="container">
         <article class="docs-article">
     <section class="docs-header">
-        <h1 class="docs-heading">Language Switcher<span class="docs-time">Last updated: 14/8/2020</span></h1>
+        <h1 class="docs-heading">Language Switcher<span class="docs-time">Last updated: 26/12/2021</span></h1>
         <p> use builtin method or create your owen language switcher .</p>
     </section>
     <section class="docs-section">
@@ -235,10 +235,10 @@ examples with output!</p>
         <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">foreach</span> <span class="p">(</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">enabled</span><span class="p">()</span> <span class="k">as</span> <span class="nv">$lang</span> <span class="p">)</span>
 <span class="p">{</span>
     <span class="c1">// Natural Language Name</span>
-    <span class="k">echo</span>  <span class="s2">"Name: "</span> <span class="mf">.</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">nameN</span><span class="p">(</span><span class="nv">$lang</span><span class="p">)</span> <span class="mf">.</span> <span class="s2">"  - link: "</span> <span class="mf">.</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nb">link</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="nv">$lang</span><span class="p">);</span>
+    <span class="k">echo</span>  <span class="s2">"Name: "</span> <span class="mf">.</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">naturalName</span><span class="p">(</span><span class="nv">$lang</span><span class="p">)</span> <span class="mf">.</span> <span class="s2">"  - link: "</span> <span class="mf">.</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">link</span><span class="o">-&gt;</span><span class="nf">create</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="nv">$lang</span><span class="p">);</span>
     <span class="k">echo</span> <span class="s2">"&lt;br&gt;"</span><span class="p">;</span>
     <span class="c1">// English Language Name</span>
-    <span class="k">echo</span>  <span class="s2">"Name: "</span> <span class="mf">.</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">name</span><span class="p">(</span><span class="nv">$lang</span><span class="p">)</span> <span class="mf">.</span> <span class="s2">"  - link: "</span> <span class="mf">.</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nb">link</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="nv">$lang</span><span class="p">);</span>
+    <span class="k">echo</span>  <span class="s2">"Name: "</span> <span class="mf">.</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">name</span><span class="p">(</span><span class="nv">$lang</span><span class="p">)</span> <span class="mf">.</span> <span class="s2">"  - link: "</span> <span class="mf">.</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">link</span><span class="o">-&gt;</span><span class="nf">create</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="nv">$lang</span><span class="p">);</span>
 
     <span class="k">echo</span> <span class="s2">"&lt;hr&gt;"</span><span class="p">;</span>
 <span class="p">}</span>
@@ -252,7 +252,7 @@ examples with output!</p>
         </p>
         <ul>
             <li>logaty()-&gt;enabled()</li>
-            <li>logaty()-&gt;nameN($lang)</li>
+            <li>logaty()-&gt;naturalNAme($lang)</li>
             <li>logaty()-&gt;name($lang)</li>
             <li>and more helpers !</li>
         </ul>

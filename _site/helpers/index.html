@@ -220,7 +220,7 @@
 
 <script>
     $(document).ready(function () {
-        $.get("https://anzawi.github.io/logaty-docs//helpers/helpers.json", function(data){
+        $.get("/helpers/helpers.json", function(data){
             data.forEach(function (helper) {
                 let html = `<div class="card m-3">
   <div class="card-header">

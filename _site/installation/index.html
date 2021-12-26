@@ -155,7 +155,7 @@
     <div class="container">
         <article class="docs-article">
     <section class="docs-header">
-        <h1 class="docs-heading">Installation <span class="docs-time">Last updated: 14/8/2020</span></h1>
+        <h1 class="docs-heading">Installation <span class="docs-time">Last updated: 26/12/2021</span></h1>
     </section>
     <section class="docs-intro">
         <p>install LOGATY using Composer.</p>
@@ -167,7 +167,7 @@
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
 	</span><span class="nl">"require"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-		</span><span class="nl">"phptricks/logaty"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&gt;=2.0"</span><span class="w">
+		</span><span class="nl">"phptricks/logaty"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&gt;=3.0"</span><span class="w">
     </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
@@ -196,19 +196,6 @@
                             <span>Helpers</span>
                             <ul style="display: block;">
                                 <li class="is-folder is-open">
-                                    <span>Detect</span>
-                                    <ul style="display: block;">
-                                        <li class="is-file">
-                                            <span>Browser.php</span>
-                                            <i>trite - detect user browser language. </i>
-                                        </li>
-                                        <li class="is-file">
-                                            <span>Country.php</span>
-                                            <i>trite - detect user country language. </i>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="is-folder is-open">
                                     <span>Switcher</span>
                                     <ul style="display: block;">
                                         <li class="is-file">
@@ -227,7 +214,7 @@
                                 </li>
                                 <li class="is-file">
                                     <span>Detect.php</span>
-                                    <i>Detect Class - Detect User Language from browser or country</i>
+                                    <i>Detect Class - Detect User Language from browser.</i>
                                 </li>
                                 <li class="is-file">
                                     <span>Link.php</span>
@@ -241,7 +228,7 @@
                         </li>
                         <li class="is-folder">
                             <span>Translate</span>
-                            <ul style="display: none;">
+                            <ul>
                                 <li class="is-file">
                                     <span>Translator.php</span>
                                     <i>Base Class for handel translation / get translation from files.</i>
@@ -250,11 +237,28 @@
                         </li>
                         <li class="is-file">
                             <span>App.php</span>
+                            <i>Logaty Application <b>Main Class</b></i>
+                        </li>
+                        <li class="is-file">
+                            <span>Logaty.php</span>
                             <i>Logaty Application <b>Container Class</b></i>
+                        </li>
+                        <li class="is-file">
+                            <span>ILogatyService.php</span>
+                            <i>Logaty Application <b>Container Interface</b></i>
                         </li>
                         <li class="is-file">
                             <span>start.php</span>
                             <i><b>Initializing</b> Logaty library .</i>
+                        </li>
+                        <li class="is-folder">
+                            <span>Exceptions</span>
+                            <ul style="display: none;">
+                                <li class="is-file">
+                                    <span>Exceptions</span>
+                                    <i>Contain Logaty Exceptions classes.</i>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </li>
@@ -275,7 +279,7 @@
                             <i>enabled languages in your website.</i>
                         </li>
                         <li class="is-file">
-                            <span>flag.php</span>
+                            <span>flags.php</span>
                             <i>language flag name (icon name en.png).</i>
                         </li>
                         <li class="is-file">
@@ -305,10 +309,6 @@
                             <i>contain translations files &amp; directories.</i>
                         </li>
                     </ul>
-                </li>
-                <li class="is-folder">
-                    <span>vendor</span>
-                    <i>composer components for classes auto-loader.</i>
                 </li>
                 <li class="is-file">
                     <span>composer.json</span>

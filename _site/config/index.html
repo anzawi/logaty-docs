@@ -155,7 +155,7 @@
     <div class="container">
         <article class="docs-article">
     <section class="docs-header">
-        <h1 class="docs-heading">Configuration files <span class="docs-time">Last updated: 14/8/2020</span></h1>
+        <h1 class="docs-heading">Configuration files <span class="docs-time">Last updated: 26/12/2021</span></h1>
     </section>
     <section class="docs-intro">
         <p>Find Config Files, Click on file to see content. </p>
@@ -180,7 +180,7 @@
                     <i>enabled languages in your website.</i>
                 </li>
                 <li class="is-file clickable" data-code="flag">
-                    <span>flag.php</span>
+                    <span>flags.php</span>
                     <i>language flag name (icon name en.png).</i>
                 </li>
                 <li class="is-file clickable" data-code="name">
@@ -442,13 +442,13 @@
     <section class="docs-section">
         
         <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-    <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">config</span><span class="p">(</span><span class="s1">'file-name.option-you-need'</span><span class="p">);</span>
+    <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">config</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">(</span><span class="s1">'file-name.option-you-need'</span><span class="p">);</span>
 
     <span class="c1">// get default language</span>
-    <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">config</span><span class="p">(</span><span class="s1">'options.default_lang'</span><span class="p">);</span>
+    <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">config</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">(</span><span class="s1">'options.default_lang'</span><span class="p">);</span>
 
     <span class="c1">// get direction for arabic language</span>
-    <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">config</span><span class="p">(</span><span class="s1">'direction.ar'</span><span class="p">);</span>
+    <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">config</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">(</span><span class="s1">'direction.ar'</span><span class="p">);</span>
 
 </code></pre></div></div>
 
@@ -456,13 +456,13 @@
 
 <p>All options in (options.php) file you can retrieve value using options helper function</p>
 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-    <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">options</span><span class="p">(</span><span class="s1">'option-you-need'</span><span class="p">);</span>
+    <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">option</span><span class="p">(</span><span class="s1">'option-you-need'</span><span class="p">);</span>
 
     <span class="c1">// get default language</span>
-    <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">options</span><span class="p">(</span><span class="s1">'default_lang'</span><span class="p">);</span>
+    <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">option</span><span class="p">(</span><span class="s1">'default_lang'</span><span class="p">);</span>
 
     <span class="c1">// check if detecting browser language is enabled</span>
-    <span class="k">if</span><span class="p">(</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">options</span><span class="p">(</span><span class="s1">'detect_browser_lang'</span><span class="p">)</span>
+    <span class="k">if</span><span class="p">(</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">option</span><span class="p">(</span><span class="s1">'detect_browser_lang'</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">echo</span> <span class="s2">"Yes"</span><span class="p">;</span>
     <span class="p">}</span>
@@ -480,7 +480,7 @@
      <span class="c1">// return -Array- All enabled languages</span>
     <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">enabled</span><span class="p">();</span>
      <span class="c1">// check if english language is enabled return -Bool-</span>
-     <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">enabled</span><span class="p">(</span><span class="s1">'en'</span><span class="p">);</span>
+     <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">isEnabled</span><span class="p">(</span><span class="s1">'en'</span><span class="p">);</span>
 
      <span class="c1">// get english language direction return -string (rtl, ltr)-</span>
       <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">direction</span><span class="p">(</span><span class="s1">'en'</span><span class="p">);</span>
@@ -531,14 +531,14 @@
             </div>
             <div class="column">
                 
-                <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">config</span><span class="p">(</span><span class="s1">'extra.need-to-trans'</span><span class="p">);</span>
+                <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">config</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">(</span><span class="s1">'extra.need-to-trans'</span><span class="p">);</span>
 <span class="cm">/*
 this code will return an array
 array : ar, es
 */</span>
 </code></pre></div></div>
 
-<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">config</span><span class="p">(</span><span class="s1">'extra.foo'</span><span class="p">);</span>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">config</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">(</span><span class="s1">'extra.foo'</span><span class="p">);</span>
 <span class="cm">/*
 this code will return string
 string : bar

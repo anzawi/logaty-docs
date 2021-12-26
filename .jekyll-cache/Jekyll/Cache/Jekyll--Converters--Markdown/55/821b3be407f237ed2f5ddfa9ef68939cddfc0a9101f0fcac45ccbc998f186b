@@ -1,0 +1,14 @@
+I"‹<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">config</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">(</span><span class="s1">'extra.need-to-trans'</span><span class="p">);</span>
+<span class="cm">/*
+this code will return an array
+array : ar, es
+*/</span>
+</code></pre></div></div>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">config</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">(</span><span class="s1">'extra.foo'</span><span class="p">);</span>
+<span class="cm">/*
+this code will return string
+string : bar
+*/</span>
+</code></pre></div></div>
+:ET
