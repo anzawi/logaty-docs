@@ -1,0 +1,32 @@
+I"�
+<p>to return to our example</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="c1">// as selected language</span>
+    <span class="cm">/* 1 */</span> <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">_x</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">);</span>
+    <span class="cm">/* 2 echo directly */</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">__</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">);</span>
+
+    <span class="c1">// as given language parameter</span>
+    <span class="cm">/* 1 */</span> <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">_x</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">,</span> <span class="s1">'ar'</span><span class="p">);</span>
+    <span class="cm">/* 2 echo directly */</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">__</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">,</span> <span class="s1">'en'</span><span class="p">);</span>
+
+</code></pre></div></div>
+<p><br />
+output well be as selected language if second parameter not set.</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">_x</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">);</span>
+    <span class="cd">/** Output :
+        * if selected language is (arabic) : مرحبا بك في الصفحة الرئيسية للغاتي.
+        * if selected language is English  : Welcome to Logaty Home Page.
+    */</span>
+
+    <span class="cd">/** --------------- Force Translation Language ---------------- */</span>
+     <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">x</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">,</span> <span class="s1">'en'</span><span class="p">);</span>
+    <span class="cd">/** Output :
+        * if selected language is (arabic) :  Welcome to Logaty Home Page.
+        * if selected language is English  : Welcome to Logaty Home Page.
+    */</span>
+
+            
+</code></pre></div></div>
+:ET

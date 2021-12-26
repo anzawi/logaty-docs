@@ -1,0 +1,16 @@
+I"r<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * flag name with extension
+ */</span>
+<span class="c1">// flag image name with extension (png, svg, ...etc)</span>
+<span class="k">return</span> <span class="p">[</span>
+    <span class="c1">// 'language-code' =&gt; 'flag-name.ext'</span>
+	<span class="s1">'ar'</span> <span class="o">=&gt;</span> <span class="s1">'ps.png'</span><span class="p">,</span>
+	<span class="s1">'en'</span> <span class="o">=&gt;</span> <span class="s1">'en.png'</span><span class="p">,</span>
+	<span class="s1">'de'</span> <span class="o">=&gt;</span> <span class="s1">'de.png'</span><span class="p">,</span>
+	<span class="s1">'fr'</span> <span class="o">=&gt;</span> <span class="s1">'fr.png'</span><span class="p">,</span>
+	<span class="s1">'pt'</span> <span class="o">=&gt;</span> <span class="s1">'pt.png'</span><span class="p">,</span>
+	<span class="s1">'ro'</span> <span class="o">=&gt;</span> <span class="s1">'ro.png'</span><span class="p">,</span>
+<span class="p">];</span>
+</code></pre></div></div>
+:ET

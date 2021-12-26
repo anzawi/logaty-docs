@@ -1,0 +1,4 @@
+I"4<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">link</span><span class="o">-&gt;</span><span class="nf">create</span><span class="p">(</span><span class="nv">$link</span> <span class="o">=</span> <span class="s1">''</span><span class="p">,</span> <span class="nv">$lang</span> <span class="o">=</span> <span class="s1">''</span><span class="p">);</span>
+</code></pre></div></div>
+:ET

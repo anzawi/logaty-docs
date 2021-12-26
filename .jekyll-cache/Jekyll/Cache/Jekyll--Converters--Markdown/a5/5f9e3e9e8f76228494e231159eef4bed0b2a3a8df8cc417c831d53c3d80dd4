@@ -1,0 +1,18 @@
+I"Î<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * Supported language in application
+ */</span>
+<span class="c1">// all languages supported in your website</span>
+<span class="c1">// supported languages not mean its enabled</span>
+<span class="c1">//</span>
+<span class="k">return</span> <span class="p">[</span>
+	<span class="mi">0</span> <span class="o">=&gt;</span> <span class="s1">'ar'</span><span class="p">,</span>
+	<span class="mi">1</span> <span class="o">=&gt;</span> <span class="s1">'en'</span><span class="p">,</span>
+	<span class="mi">2</span> <span class="o">=&gt;</span> <span class="s1">'de'</span><span class="p">,</span>
+	<span class="mi">3</span> <span class="o">=&gt;</span> <span class="s1">'fr'</span><span class="p">,</span>
+	<span class="mi">4</span> <span class="o">=&gt;</span> <span class="s1">'pt'</span><span class="p">,</span>
+	<span class="mi">5</span> <span class="o">=&gt;</span> <span class="s1">'es'</span><span class="p">,</span>
+	<span class="mi">6</span> <span class="o">=&gt;</span> <span class="s1">'ro'</span><span class="p">,</span>
+<span class="p">];</span>
+</code></pre></div></div>
+:ET

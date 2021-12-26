@@ -1,4 +1,4 @@
 ```php
 <?php
-    logaty()->link($link = '', $lang = '');
+    logaty()->link->create($link = '', $lang = '');
 ```

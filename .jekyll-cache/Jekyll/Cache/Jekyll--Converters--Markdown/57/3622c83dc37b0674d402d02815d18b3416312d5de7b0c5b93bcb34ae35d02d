@@ -1,0 +1,101 @@
+I"6<article class="docs-article">
+    <section class="docs-header">
+        <h1 class="docs-heading">Detect Language's <span class="docs-time">Last updated: 26/12/2021</span></h1>
+    </section>
+    <section class="docs-intro">
+        <p> Detect visitors Browser or Country Language in easy! .</p>
+    </section>
+    <section class="docs-section">
+        <h1 class="section-heading">Introduction <small> Learn About Logaty Detecting Languages </small></h1>
+        <p>
+            LOGATY Allow you to detect visitor language for his browser language.<br />
+            to beginning detect visitor language you need to take a look on detect configuration <kbd>./Config/options.php</kbd><br />
+            you can see :<br />
+            <kbd>detect_browser_lang</kbd> to enable detecting browser language.<br />
+            <kbd>true</kbd> mean enabled , <kbd>false</kbd> mean disabled.<br />
+        </p>
+    </section>
+</article>
+
+<article class="docs-article">
+    <section class="docs-header">
+        <h1 class="docs-heading">Detect Browser Language</h1>
+    </section>
+    <section class="docs-intro">
+        <p>
+            get visitor browser language<br />
+            first thing you need to make sure is (detect browser language) enabled.
+            <kbd>"detect_browser_lang" =&gt; true</kbd><br />
+            <small>if detected language is not enabled in your website,
+                this method will return default language in website</small>
+        </p>
+    </section>
+    <section class="docs-section">
+        
+        <p><strong>How to Use :</strong></p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">detect</span><span class="o">-&gt;</span><span class="nf">browser</span><span class="p">();</span>
+    <span class="c1">// return browser language code-2-digits</span>
+   
+</code></pre></div></div>
+<p><br />
+for example if browser language is arabic the method will be return (ar),
+and if browser language is english the method will be return (en).</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="nv">$browserLanguage</span> <span class="o">=</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">detect</span><span class="o">-&gt;</span><span class="n">browser</span><span class="p">;</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="nv">$browserLanguage</span> <span class="o">!=</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nb">current</span><span class="p">())</span>
+    <span class="p">{</span>
+        <span class="nf">showModal</span><span class="p">([</span>
+            <span class="s1">'type'</span>     <span class="o">=&gt;</span> <span class="s1">'browser'</span><span class="p">,</span>
+            <span class="s1">'language'</span> <span class="o">=&gt;</span> <span class="nv">$browserLanguage</span><span class="p">,</span>
+        <span class="p">]);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// showModal function</span>
+    <span class="k">function</span> <span class="n">showModal</span><span class="p">(</span><span class="nv">$options</span> <span class="o">=</span> <span class="p">[])</span>
+    <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="k">isset</span><span class="p">(</span><span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'detect'</span><span class="p">]))</span>
+        <span class="p">{</span>
+            <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'detect'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+            <span class="c1">// show modal or message box or do what you want</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+</code></pre></div></div>
+
+        <br />
+        <code>logaty()-&gt;current()</code> return current language in your website. <br />
+        you can check (<a href="/helpers/">Helpers</a>) section to learn more about <code>logaty()-&gt;current()</code>
+    </section>
+</article>
+
+<article class="docs-article">
+    <section class="docs-header">
+        <h1 class="docs-heading">Detect Country Language</h1>
+        <kbd style="background-color: red">Removed Since V3.0.0</kbd>
+    </section>
+    <section class="docs-intro" style="opacity: 0.4;cursor: not-allowed">
+        <p>
+            get visitor country language <br />
+            first thing you need to make sure is (detect country language) enabled.
+            <kbd>"detect_country_lang" =&gt; true</kbd><br />
+            <small>if detected language is not enabled in your website,
+                this method will return default language in website</small>
+        </p>
+    </section>
+    <section class="docs-section" style="opacity: 0.4; cursor: not-allowed">
+        
+        <p><strong>How to Use :</strong></p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="c1">// removed since version 3.0.0</span>
+</code></pre></div></div>
+
+        <br />
+        <code>logaty()-&gt;current()</code> return current language in your website. <br />
+        you can check (<a href="/helpers/">Helpers</a>) section to learn more about <code>logaty()-&gt;current()</code>
+    </section>
+</article>
+:ET

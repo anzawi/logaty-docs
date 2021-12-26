@@ -5,7 +5,7 @@ title: Configuration
 nav_order: 3
 description: ''
 permalink: /config/
-last-update: 14/8/2020
+last-update: 26/12/2021
 ---
 
 {% include partials/Config.html %}

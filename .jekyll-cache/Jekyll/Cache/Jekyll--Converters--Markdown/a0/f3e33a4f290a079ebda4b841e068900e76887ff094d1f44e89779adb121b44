@@ -1,0 +1,399 @@
+I"�S<article class="docs-article">
+    <section class="docs-header">
+        <h1 class="docs-heading">Configuration files <span class="docs-time">Last updated: 26/12/2021</span></h1>
+    </section>
+    <section class="docs-intro">
+        <p>Find Config Files, Click on file to see content. </p>
+    </section>
+    <section class="docs-section">
+       <div class="file-tree">
+    <ul>
+        <li class="is-folder is-open">
+            <span>Config</span>
+
+            <ul>
+                <li class="is-file clickable" data-code="options">
+                    <span>options.php</span>
+                    <i>General Settings.</i>
+                </li>
+                <li class="is-file clickable" data-code="direction">
+                    <span>direction.php</span>
+                    <i>languages direction (ltr or rtl).</i>
+                </li>
+                <li class="is-file clickable" data-code="enabled">
+                    <span>enabled.php</span>
+                    <i>enabled languages in your website.</i>
+                </li>
+                <li class="is-file clickable" data-code="flag">
+                    <span>flags.php</span>
+                    <i>language flag name (icon name en.png).</i>
+                </li>
+                <li class="is-file clickable" data-code="name">
+                    <span>name.php</span>
+                    <i>Language Name ( Name in English &amp; Natural Name ).</i>
+                </li>
+                <li class="is-file clickable" data-code="supported">
+                    <span>supported.php</span>
+                    <i>all languages supported in your website.</i>
+                </li>
+                <li class="is-file clickable" data-code="paths">
+                    <span>paths.php</span>
+                    <i>directory paths of (languages directory &amp; flags directory).</i>
+                </li>
+                <li class="is-file clickable" data-code="code">
+                    <span>code.php</span>
+                    <i>languages ISO-2 Codes - optional if you want to use it.</i>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div id="options" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            
+            <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * Library Options
+ */</span>
+
+<span class="k">return</span> <span class="p">[</span>
+    <span class="cd">/** Default Language in your website */</span>
+	<span class="s1">'default_lang'</span> <span class="o">=&gt;</span> <span class="s1">'en'</span><span class="p">,</span>
+    <span class="cd">/** if you want to enable detect visitor browser language */</span>
+	<span class="s1">'detect_browser_lang'</span> <span class="o">=&gt;</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="cd">/** if you want to enable detect visitor country language */</span>
+	<span class="s1">'detect_country_lang'</span> <span class="o">=&gt;</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="cd">/**
+        enable(true) if ypu want to hide language parameter
+        from url if selected language is default language
+    */</span>
+	<span class="s1">'hide_default_language'</span> <span class="o">=&gt;</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="cd">/** language parameter in url name */</span>
+	<span class="s1">'lang_key'</span> <span class="o">=&gt;</span> <span class="s1">'lang'</span><span class="p">,</span>
+    <span class="cd">/**
+        if you want to hide untranslated content
+            - advanced using when connect library with database -
+    */</span>
+	<span class="s1">'hide_untranslated'</span> <span class="o">=&gt;</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="cd">/**
+        if you want to alert user about untranslated content
+        (hide_untranslated must be false)
+            - advanced using when connect library with database -
+    */</span>
+	<span class="s1">'alert_user_available_lang'</span> <span class="o">=&gt;</span> <span class="kc">true</span><span class="p">,</span>
+<span class="p">];</span>
+</code></pre></div></div>
+
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<div id="direction" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            
+            <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * language direction
+ */</span>
+
+<span class="k">return</span> <span class="p">[</span>
+    <span class="c1">// 'lang-code' =&gt; 'direction'</span>
+	<span class="s1">'ar'</span> <span class="o">=&gt;</span> <span class="s1">'rtl'</span><span class="p">,</span> <span class="c1">// arabic language is -right to left- then rtl</span>
+	<span class="s1">'en'</span> <span class="o">=&gt;</span> <span class="s1">'ltr'</span><span class="p">,</span> <span class="c1">// english language is -left to right- then ltr</span>
+	<span class="c1">// you can add all languages supported in your website</span>
+    <span class="s1">'es'</span> <span class="o">=&gt;</span> <span class="s1">'ltr'</span><span class="p">,</span>
+	<span class="s1">'de'</span> <span class="o">=&gt;</span> <span class="s1">'ltr'</span><span class="p">,</span>
+<span class="p">];</span>
+</code></pre></div></div>
+
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<div id="enabled" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            
+            <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="cd">/**
+ * enabled languages in application
+ */</span>
+<span class="c1">// all enabled languages in your website</span>
+<span class="k">return</span> <span class="p">[</span>
+	<span class="mi">0</span> <span class="o">=&gt;</span> <span class="s1">'ar'</span><span class="p">,</span>
+	<span class="mi">1</span> <span class="o">=&gt;</span> <span class="s1">'en'</span><span class="p">,</span>
+	<span class="mi">2</span> <span class="o">=&gt;</span> <span class="s1">'de'</span>
+    <span class="c1">// you can add all languages you need</span>
+<span class="p">];</span>
+</code></pre></div></div>
+
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<div id="flag" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            
+            <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * flag name with extension
+ */</span>
+<span class="c1">// flag image name with extension (png, svg, ...etc)</span>
+<span class="k">return</span> <span class="p">[</span>
+    <span class="c1">// 'language-code' =&gt; 'flag-name.ext'</span>
+	<span class="s1">'ar'</span> <span class="o">=&gt;</span> <span class="s1">'ps.png'</span><span class="p">,</span>
+	<span class="s1">'en'</span> <span class="o">=&gt;</span> <span class="s1">'en.png'</span><span class="p">,</span>
+	<span class="s1">'de'</span> <span class="o">=&gt;</span> <span class="s1">'de.png'</span><span class="p">,</span>
+	<span class="s1">'fr'</span> <span class="o">=&gt;</span> <span class="s1">'fr.png'</span><span class="p">,</span>
+	<span class="s1">'pt'</span> <span class="o">=&gt;</span> <span class="s1">'pt.png'</span><span class="p">,</span>
+	<span class="s1">'ro'</span> <span class="o">=&gt;</span> <span class="s1">'ro.png'</span><span class="p">,</span>
+<span class="p">];</span>
+</code></pre></div></div>
+
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<div id="name" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            
+            <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * Language name in english and natural
+ */</span>
+
+<span class="k">return</span> <span class="p">[</span>
+	<span class="s1">'english'</span> <span class="o">=&gt;</span> <span class="p">[</span>
+    <span class="c1">// 'language-code' =&gt; 'language name in english'</span>
+		<span class="s1">'ar'</span> <span class="o">=&gt;</span> <span class="s1">'Arabic'</span><span class="p">,</span>
+		<span class="s1">'en'</span> <span class="o">=&gt;</span> <span class="s1">'English'</span><span class="p">,</span>
+		<span class="s1">'de'</span> <span class="o">=&gt;</span> <span class="s1">'German'</span><span class="p">,</span>
+		<span class="s1">'fr'</span> <span class="o">=&gt;</span> <span class="s1">'French'</span><span class="p">,</span>
+		<span class="s1">'pt'</span> <span class="o">=&gt;</span> <span class="s1">'Portuguese'</span><span class="p">,</span>
+		<span class="s1">'ro'</span> <span class="o">=&gt;</span> <span class="s1">'Romanian'</span><span class="p">,</span>
+		<span class="s1">'es'</span> <span class="o">=&gt;</span> <span class="s1">'Spain'</span><span class="p">,</span>
+	<span class="p">],</span>
+	<span class="s1">'natural'</span> <span class="o">=&gt;</span> <span class="p">[</span>
+    <span class="c1">// 'language-code' =&gt; 'natural language name'</span>
+		<span class="s1">'ar'</span> <span class="o">=&gt;</span> <span class="s1">'العربية'</span><span class="p">,</span>
+		<span class="s1">'en'</span> <span class="o">=&gt;</span> <span class="s1">'English'</span><span class="p">,</span>
+		<span class="s1">'es'</span> <span class="o">=&gt;</span> <span class="s1">'España'</span><span class="p">,</span>
+		<span class="s1">'de'</span> <span class="o">=&gt;</span> <span class="s1">'Deutsch'</span><span class="p">,</span>
+		<span class="s1">'fr'</span> <span class="o">=&gt;</span> <span class="s1">'Français'</span><span class="p">,</span>
+		<span class="s1">'pt'</span> <span class="o">=&gt;</span> <span class="s1">'Português'</span><span class="p">,</span>
+		<span class="s1">'ro'</span> <span class="o">=&gt;</span> <span class="s1">'Română'</span><span class="p">,</span>
+	<span class="p">],</span>
+<span class="p">];</span>
+</code></pre></div></div>
+
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<div id="supported" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            
+            <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * Supported language in application
+ */</span>
+<span class="c1">// all languages supported in your website</span>
+<span class="c1">// supported languages not mean its enabled</span>
+<span class="c1">//</span>
+<span class="k">return</span> <span class="p">[</span>
+	<span class="mi">0</span> <span class="o">=&gt;</span> <span class="s1">'ar'</span><span class="p">,</span>
+	<span class="mi">1</span> <span class="o">=&gt;</span> <span class="s1">'en'</span><span class="p">,</span>
+	<span class="mi">2</span> <span class="o">=&gt;</span> <span class="s1">'de'</span><span class="p">,</span>
+	<span class="mi">3</span> <span class="o">=&gt;</span> <span class="s1">'fr'</span><span class="p">,</span>
+	<span class="mi">4</span> <span class="o">=&gt;</span> <span class="s1">'pt'</span><span class="p">,</span>
+	<span class="mi">5</span> <span class="o">=&gt;</span> <span class="s1">'es'</span><span class="p">,</span>
+	<span class="mi">6</span> <span class="o">=&gt;</span> <span class="s1">'ro'</span><span class="p">,</span>
+<span class="p">];</span>
+</code></pre></div></div>
+
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<div id="paths" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            
+            <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * directory paths for (languages and flags)
+ */</span>
+
+<span class="k">return</span> <span class="p">[</span>
+    <span class="c1">// translation files directory</span>
+	<span class="s1">'lang_files'</span> <span class="o">=&gt;</span> <span class="k">__DIR__</span> <span class="mf">.</span> <span class="s1">'/../local/languages/'</span><span class="p">,</span>
+    <span class="c1">// flags images directory</span>
+	<span class="s1">'flags'</span> <span class="o">=&gt;</span> <span class="k">__DIR__</span> <span class="mf">.</span> <span class="s1">'/../local/flags/'</span><span class="p">,</span>
+<span class="p">];</span>
+</code></pre></div></div>
+
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<div id="code" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            
+            <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * Languages local code 4-digits
+   optional config we dont use it any where!
+ */</span>
+<span class="k">return</span> <span class="p">[</span>
+	<span class="s1">'ar'</span> <span class="o">=&gt;</span> <span class="s1">'ar'</span><span class="p">,</span>
+	<span class="s1">'en'</span> <span class="o">=&gt;</span> <span class="s1">'en-US'</span><span class="p">,</span>
+	<span class="s1">'de'</span> <span class="o">=&gt;</span> <span class="s1">'de_DE'</span><span class="p">,</span>
+	<span class="s1">'fr'</span> <span class="o">=&gt;</span> <span class="s1">'fr_FR'</span><span class="p">,</span>
+	<span class="s1">'pt'</span> <span class="o">=&gt;</span> <span class="s1">'es_ES'</span><span class="p">,</span>
+	<span class="s1">'ro'</span> <span class="o">=&gt;</span> <span class="s1">'ro_RO'</span><span class="p">,</span>
+	<span class="s1">'te'</span> <span class="o">=&gt;</span> <span class="s1">'te-TE'</span><span class="p">,</span>
+<span class="p">];</span>
+</code></pre></div></div>
+
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+    </section>
+</article>
+
+<article class="docs-article">
+    <section class="docs-header">
+        <h1 class="docs-heading">Get configuration values</h1>
+    </section>
+    <section class="docs-intro">
+        <p>How to use Configuration its easy to get configuration values!</p>
+    </section>
+    <section class="docs-section">
+        
+        <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">config</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">(</span><span class="s1">'file-name.option-you-need'</span><span class="p">);</span>
+
+    <span class="c1">// get default language</span>
+    <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">config</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">(</span><span class="s1">'options.default_lang'</span><span class="p">);</span>
+
+    <span class="c1">// get direction for arabic language</span>
+    <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">config</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">(</span><span class="s1">'direction.ar'</span><span class="p">);</span>
+
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>All options in (options.php) file you can retrieve value using options helper function</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">option</span><span class="p">(</span><span class="s1">'option-you-need'</span><span class="p">);</span>
+
+    <span class="c1">// get default language</span>
+    <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">option</span><span class="p">(</span><span class="s1">'default_lang'</span><span class="p">);</span>
+
+    <span class="c1">// check if detecting browser language is enabled</span>
+    <span class="k">if</span><span class="p">(</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">option</span><span class="p">(</span><span class="s1">'detect_browser_lang'</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"Yes"</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">"NO"</span><span class="p">;</span>
+    <span class="p">}</span>
+
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>You can get configuration using <a href="/helpers/">Helpers</a></p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+     <span class="c1">// return -Array- All enabled languages</span>
+    <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">enabled</span><span class="p">();</span>
+     <span class="c1">// check if english language is enabled return -Bool-</span>
+     <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">isEnabled</span><span class="p">(</span><span class="s1">'en'</span><span class="p">);</span>
+
+     <span class="c1">// get english language direction return -string (rtl, ltr)-</span>
+      <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">direction</span><span class="p">(</span><span class="s1">'en'</span><span class="p">);</span>
+
+</code></pre></div></div>
+
+    </section>
+</article>
+
+<article class="docs-article">
+    <section class="docs-header">
+        <h1 class="docs-heading">Create Your Own Configuration</h1>
+    </section>
+    <section class="docs-intro">
+        <p>you can create extra configurations if your application (website) need</p>
+    </section>
+    <section class="docs-section">
+       <ul class="guides">
+    <li class="guide has-figure">
+        <div class="columns">
+            <div class="column">
+                <h5>Create Config File</h5>
+                <p>inside LOGATY directory go to -/config/- directory <br /> &amp; create <i class="fas fa-code"></i>php file called what you want.</p>
+                <p>for <i class="fas fa-flask"></i> example I will create file called extra.php</p>
+            </div>
+            <div class="column">
+                
+                <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="k">return</span> <span class="p">[</span>
+        <span class="c1">// languages we a help hand to translate website to </span>
+        <span class="s1">'need-to-trans'</span> <span class="o">=&gt;</span> <span class="p">[</span>
+            <span class="s1">'ar'</span><span class="p">,</span> <span class="s1">'es'</span>
+        <span class="p">],</span>
+        <span class="s1">'foo'</span> <span class="o">=&gt;</span> <span class="s1">'bar'</span>
+    <span class="p">];</span>
+</code></pre></div></div>
+
+            </div>
+        </div>
+    </li>
+    <li class="guide">
+        <div class="columns">
+            <div class="column">
+                <h5>retrieve config</h5>
+                <p>
+                    get values fro your extra config
+                </p>
+            </div>
+            <div class="column">
+                
+                <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">config</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">(</span><span class="s1">'extra.need-to-trans'</span><span class="p">);</span>
+<span class="cm">/*
+this code will return an array
+array : ar, es
+*/</span>
+</code></pre></div></div>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">config</span><span class="o">-&gt;</span><span class="nf">get</span><span class="p">(</span><span class="s1">'extra.foo'</span><span class="p">);</span>
+<span class="cm">/*
+this code will return string
+string : bar
+*/</span>
+</code></pre></div></div>
+
+            </div>
+        </div>
+    </li>
+</ul>
+    </section>
+</article>
+:ET

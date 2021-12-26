@@ -5,7 +5,7 @@ title: Start Translate
 nav_order: 4
 description: ''
 permalink: /translation/
-last-update: 14/8/2020
+last-update: 26/12/2021
 ---
 
 {% include partials/translation.html %}

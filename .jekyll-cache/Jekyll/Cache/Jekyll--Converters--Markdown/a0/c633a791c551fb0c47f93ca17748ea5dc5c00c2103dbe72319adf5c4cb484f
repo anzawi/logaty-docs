@@ -1,0 +1,15 @@
+I"<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+ * language direction
+ */</span>
+
+<span class="k">return</span> <span class="p">[</span>
+    <span class="c1">// 'lang-code' =&gt; 'direction'</span>
+	<span class="s1">'ar'</span> <span class="o">=&gt;</span> <span class="s1">'rtl'</span><span class="p">,</span> <span class="c1">// arabic language is -right to left- then rtl</span>
+	<span class="s1">'en'</span> <span class="o">=&gt;</span> <span class="s1">'ltr'</span><span class="p">,</span> <span class="c1">// english language is -left to right- then ltr</span>
+	<span class="c1">// you can add all languages supported in your website</span>
+    <span class="s1">'es'</span> <span class="o">=&gt;</span> <span class="s1">'ltr'</span><span class="p">,</span>
+	<span class="s1">'de'</span> <span class="o">=&gt;</span> <span class="s1">'ltr'</span><span class="p">,</span>
+<span class="p">];</span>
+</code></pre></div></div>
+:ET
