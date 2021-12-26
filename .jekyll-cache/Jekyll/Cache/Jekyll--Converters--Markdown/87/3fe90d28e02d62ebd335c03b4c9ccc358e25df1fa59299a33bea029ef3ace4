@@ -1,0 +1,36 @@
+I"g<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"&lt;?php echo logaty()-&gt;link('', $language_code) ?&gt;"</span><span class="nt">&gt;</span>My Link<span class="nt">&lt;/a&gt;</span>
+
+// real example
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"&lt;?php echo logaty()-&gt;link('', 'en') ?&gt;"</span><span class="nt">&gt;</span>this page in english language<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>Generate Link to other Page with selected language</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"&lt;?php echo logaty()-&gt;link('my_link') ?&gt;"</span><span class="nt">&gt;</span>
+    <span class="cp">&lt;?php logaty()-&gt;__("My Link")?&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+
+// real example
+
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"&lt;?php echo logaty()-&gt;link('/about_me') ?&gt;"</span><span class="nt">&gt;</span>
+    <span class="cp">&lt;?php logaty()-&gt;__("Go to About me Page in selected Language")?&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
+<p>Generate Link to other Page with forced language</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"&lt;?php echo logaty()-&gt;link('my_link', 'lang-code') ?&gt;"</span><span class="nt">&gt;</span>
+    <span class="cp">&lt;?php logaty()-&gt;__("My Link")?&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+
+// real example
+
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"&lt;?php echo logaty()-&gt;link('/about_me', 'ar') ?&gt;"</span><span class="nt">&gt;</span>
+    <span class="cp">&lt;?php logaty()-&gt;__("Go to About me Page in Arabic Language")?&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+:ET
