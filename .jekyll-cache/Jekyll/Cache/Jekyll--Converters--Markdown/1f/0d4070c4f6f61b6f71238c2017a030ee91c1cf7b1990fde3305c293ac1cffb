@@ -1,0 +1,12 @@
+I"­<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">foreach</span> <span class="p">(</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">enabled</span><span class="p">()</span> <span class="k">as</span> <span class="nv">$lang</span> <span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// Natural Language Name</span>
+    <span class="k">echo</span>  <span class="s2">"Name: "</span> <span class="mf">.</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">nameN</span><span class="p">(</span><span class="nv">$lang</span><span class="p">)</span> <span class="mf">.</span> <span class="s2">"  - link: "</span> <span class="mf">.</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nb">link</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="nv">$lang</span><span class="p">);</span>
+    <span class="k">echo</span> <span class="s2">"&lt;br&gt;"</span><span class="p">;</span>
+    <span class="c1">// English Language Name</span>
+    <span class="k">echo</span>  <span class="s2">"Name: "</span> <span class="mf">.</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">name</span><span class="p">(</span><span class="nv">$lang</span><span class="p">)</span> <span class="mf">.</span> <span class="s2">"  - link: "</span> <span class="mf">.</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nb">link</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="nv">$lang</span><span class="p">);</span>
+
+    <span class="k">echo</span> <span class="s2">"&lt;hr&gt;"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+:ET
