@@ -1,0 +1,11 @@
+I"Ë<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer require phptricks/logaty
+</code></pre></div></div>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+	</span><span class="nl">"require"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+		</span><span class="nl">"phptricks/logaty"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&gt;=3.0"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+:ET

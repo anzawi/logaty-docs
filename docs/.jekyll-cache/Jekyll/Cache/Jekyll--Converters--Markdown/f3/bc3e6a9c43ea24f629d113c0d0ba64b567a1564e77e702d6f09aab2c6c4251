@@ -1,0 +1,39 @@
+I"Ü
+<p><strong>How to Use :</strong></p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">detect</span><span class="p">(</span><span class="s1">'country'</span><span class="p">);</span>
+    <span class="c1">// return browser language code-2-digits</span>
+
+</code></pre></div></div>
+
+<p>for example if country language is arabic the method will be return (ar),
+and if country language is english the method will be return (en).
+if detected language is not enabled in your website the method will be return (website default language).</p>
+
+<p><br /></p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="nv">$browserLanguage</span> <span class="o">=</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">detect</span><span class="p">(</span><span class="s1">'country'</span><span class="p">);</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="nv">$browserLanguage</span> <span class="o">!=</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nb">current</span><span class="p">())</span>
+    <span class="p">{</span>
+        <span class="nf">showModal</span><span class="p">([</span>
+            <span class="s1">'type'</span>     <span class="o">=&gt;</span> <span class="s1">'country'</span><span class="p">,</span>
+            <span class="s1">'language'</span> <span class="o">=&gt;</span> <span class="nv">$browserLanguage</span><span class="p">,</span>
+        <span class="p">]);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// showModal function</span>
+    <span class="k">function</span> <span class="n">showModal</span><span class="p">(</span><span class="nv">$options</span> <span class="o">=</span> <span class="p">[])</span>
+    <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="k">isset</span><span class="p">(</span><span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'detect'</span><span class="p">]))</span>
+        <span class="p">{</span>
+            <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'detect'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+            <span class="c1">// show modal or message box or do what you want</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+        
+</code></pre></div></div>
+:ET

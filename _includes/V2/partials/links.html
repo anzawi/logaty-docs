@@ -1,0 +1,42 @@
+<article class="docs-article">
+    <section class="docs-header">
+        <h1 class="docs-heading">Link's & URL's <span class="docs-time">Last updated: {{ page.last-update }}</span></h1>
+        <p>Create Link & URL with selected language OR force it to other language . </p>
+    </section>
+    <section class="docs-section">
+        <h1 class="section-heading">Introduction</h1>
+        <p>
+            <kbd>Link</kbd> class helps you to create links & url's with language parameter in easy.<br>
+            you can find <kbd>Links class</kbd> in <kbd>./Logaty/Helpers/Link.php</kbd><br>
+            there's only one public method called <kbd>create($link = '', $lang = ''$)</kbd>.<br>
+            this class helps you to clean url and rebuild it to set language parameter in easy.
+        </p>
+    </section>
+</article>
+
+<article class="docs-article">
+    <section class="docs-header">
+        <h1 class="docs-heading">Create Links</h1>
+        <p class="docs-overview">
+            build url's & link with LOGATY <br>
+            <strong>one function do everything. </strong>
+        </p>
+    </section>
+    <section class="docs-code-block">
+        {% capture linkOverView %}{% include V2/code/link-overview.md %}{% endcapture %}
+        {{ linkOverView | markdownify }}
+    </section>
+    <section class="docs-section">
+        <kbd>$link</kbd> (Optional) the link you want to generate (or slug) .<br>
+        <kbd>$lang</kbd> (Optional) the language for generated link.<br>
+        <hr>
+        IF <kbd>$link</kbd> parameter not sent (send empty string) that create link to same page.<br>
+        IF <kbd>$lang</kbd> parameter not sent that create link to current language.<br>
+    </section>
+
+    <section class="docs-code-block">
+        <h3 class="section-heading">Examples:</h3>
+        {% capture link %}{% include V2/code/links-ex.md %}{% endcapture %}
+        {{ link | markdownify }}
+    </section>
+</article>

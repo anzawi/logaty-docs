@@ -1,0 +1,10 @@
+I"<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="k">return</span> <span class="p">[</span>
+        <span class="c1">// languages we a help hand to translate website to </span>
+        <span class="s1">'need-to-trans'</span> <span class="o">=&gt;</span> <span class="p">[</span>
+            <span class="s1">'ar'</span><span class="p">,</span> <span class="s1">'es'</span>
+        <span class="p">],</span>
+        <span class="s1">'foo'</span> <span class="o">=&gt;</span> <span class="s1">'bar'</span>
+    <span class="p">];</span>
+</code></pre></div></div>
+:ET

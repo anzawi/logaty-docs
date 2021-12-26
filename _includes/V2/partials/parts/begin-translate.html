@@ -1,0 +1,76 @@
+<ul class="guides">
+    <!-- 1 -->
+    <li class="guide has-figure">
+        <div class="columns">
+            <div class="column">
+                <h5>Create Languages Directories</h5>
+                <p>inside -local/languages- directory I want to create (Arabic, English) directories</p>
+            </div>
+            <div class="column">
+                <div class="file-tree">
+                    <ul>
+                        <li class="is-folder is-open">
+                            <span>languages</span>
+                            <ul>
+                                <li class="is-folder">
+                                    <span>en</span>
+                                </li>
+                                <li class="is-folder">
+                                    <span>ar</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!-- 2 -->
+    <li class="guide has-figure">
+        <div class="columns">
+            <div class="column">
+                <h5>Create Translation Files</h5>
+                <p>inside each -languages directories- I want to create translation files for homepage content</p>
+            </div>
+            <div class="column">
+                <div class="file-tree">
+                    <ul>
+                        <li class="is-folder is-open">
+                            <span>languages</span>
+                            <ul>
+                                <li class="is-folder is-open">
+                                    <span>en</span>
+                                    <ul>
+                                        <li class="is-file"><span>home.php</span></li>
+                                    </ul>
+                                </li>
+                                <li class="is-folder is-open">
+                                    <span>ar</span>
+                                    <ul>
+                                        <li class="is-file"><span>home.php</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!-- 3 -->
+    <li class="guide">
+        <h5>set translation files content</h5>
+        <p>translation files return an array has a sentence key and translation.</p>
+        <kbd class="hint-code">ar/home.php</kbd>
+        {% capture arTrans %} {% include V2/code/ar-trans.md %} {% endcapture %}
+        {{ arTrans | markdownify }}
+        <kbd class="hint-code">en/home.php</kbd>
+        {% capture enTrans %} {% include V2/code/en-trans.md %} {% endcapture %}
+        {{ enTrans | markdownify }}
+    </li>
+    <li class="guide">
+        <h5>Now Create all translation files your website need</h5>
+        <p>now you can create all translation you need in your website. <br>
+            <kbd class="eg">Remember</kbd> you can add unlimited languages in your website.</p>
+    </li>
+</ul>

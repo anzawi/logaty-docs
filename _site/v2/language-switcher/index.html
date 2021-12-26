@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Switcher - Logaty</title>
+
+    
+    <meta name="Description" content="">
+    
+    
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohammad Anzawi">
+    <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+
+    <!-- FontAwesome JS-->
+    <script defer src="http://localhost:4000/assets/fontawesome/js/all.js"></script>
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="http://localhost:4000/assets/css/theme.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/code.css">
+    <script src="http://localhost:4000/assets/plugins/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<header class="header fixed-top">
+    <div class="branding docs-branding">
+        <div class="container-fluid position-relative py-2">
+            <div class="docs-logo-wrapper">
+                <button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="site-logo"><a class="navbar-brand" href="https://anzawi.github.io/logaty-docs/"><img class="logo-icon mr-2" src="" alt="logaty"><span class="logo-text"><span class="text-alt"> v2.0.0 Docs</span></span></a></div>
+            </div><!--//docs-logo-wrapper-->
+            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+                <div class="top-search-box d-none d-lg-flex">
+                    <form class="search-form w-100">
+                        <input autocomplete="off" id="search-input" type="text" placeholder="Search in Logaty Docs..." name="search" class="form-control search-input">
+                        <button type="button" disabled="disabled" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+                        <div id="search-results" class="search-results"></div>
+                        <div class="search-overlay"></div>
+                    </form>
+                </div>
+
+                <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+                    <li class="list-inline-item"><a href="https://github.com/anzawi"><i class="fab fa-github fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/Al_Anzawi"><i class="fab fa-twitter fa-fw"></i></a></li>
+                </ul><!--//social-list-->
+                <a href="https://github.com/anzawi/logaty" class="btn btn-primary d-lg-flex">Download</a>
+            </div><!--//docs-top-utilities-->
+        </div><!--//container-->
+    </div><!--//branding-->
+</header><!--//header-->
+
+<div class="docs-wrapper">
+    <div id="docs-sidebar" class="docs-sidebar">
+        <nav id="docs-nav" class="docs-nav navbar">
+            <ul class="section-items list-unstyled nav flex-column pb-3">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li class="nav-item section-title">
+                            <a class="nav-link scrollto" href="http://localhost:4000/v2/introduction/">
+                                <span class="theme-icon-holder mr-2">
+                                    <i class="fas fa-map-signs"></i>
+                                </span>Introduction</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item section-title">
+                            <a class="nav-link scrollto" href="http://localhost:4000/introduction/">
+                                <span class="theme-icon-holder mr-2">
+                                    <i class="fas fa-map-signs"></i>
+                                </span>Introduction</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item section-title">
+                            <a class="nav-link scrollto" href="http://localhost:4000/v2/installation/">
+                                <span class="theme-icon-holder mr-2">
+                                    <i class="fas fa-arrow-down"></i>
+                                </span>Installation</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item section-title">
+                            <a class="nav-link scrollto" href="http://localhost:4000/installation/">
+                                <span class="theme-icon-holder mr-2">
+                                    <i class="fas fa-arrow-down"></i>
+                                </span>Installation</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item section-title">
+                            <a class="nav-link scrollto" href="http://localhost:4000/v2/config/">
+                                <span class="theme-icon-holder mr-2">
+                                    <i class="fas fa-cogs"></i>
+                                </span>Configuration</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item section-title">
+                            <a class="nav-link scrollto" href="http://localhost:4000/config/">
+                                <span class="theme-icon-holder mr-2">
+                                    <i class="fas fa-cogs"></i>
+                                </span>Configuration</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item section-title">
+                            <a class="nav-link scrollto" href="http://localhost:4000/v2/translation/">
+                                <span class="theme-icon-holder mr-2">
+                                    <i class="fas fa-language"></i>
+                                </span>Start Translate</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item section-title">
+                            <a class="nav-link scrollto" href="http://localhost:4000/translation/">
+                                <span class="theme-icon-holder mr-2">
+                                    <i class="fas fa-language"></i>
+                                </span>Start Translate</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item section-title">
+                            <a class="nav-link scrollto" href="http://localhost:4000/v2/links/">
+                                <span class="theme-icon-holder mr-2">
+                                    <i class="fas fa-link"></i>
+                                </span>Link's & URL's</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item section-title">
+                            <a class="nav-link scrollto" href="http://localhost:4000/links/">
+                                <span class="theme-icon-holder mr-2">
+                                    <i class="fas fa-link"></i>
+                                </span>Link's & URL's</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item section-title">
+                            <a class="nav-link scrollto active" href="http://localhost:4000/v2/language-switcher/">
+                                <span class="theme-icon-holder mr-2">
+                                    <i class="fas fa-toggle-on"></i>
+                                </span>Switcher</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item section-title">
+                            <a class="nav-link scrollto active" href="http://localhost:4000/language-switcher/">
+                                <span class="theme-icon-holder mr-2">
+                                    <i class="fas fa-toggle-on"></i>
+                                </span>Switcher</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item section-title">
+                            <a class="nav-link scrollto" href="http://localhost:4000/v2/detect-language/">
+                                <span class="theme-icon-holder mr-2">
+                                    <i class="fas fa-robot"></i>
+                                </span>Detector</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item section-title">
+                            <a class="nav-link scrollto" href="http://localhost:4000/detect-language/">
+                                <span class="theme-icon-holder mr-2">
+                                    <i class="fas fa-robot"></i>
+                                </span>Detector</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item section-title">
+                            <a class="nav-link scrollto" href="http://localhost:4000/v2/helpers/">
+                                <span class="theme-icon-holder mr-2">
+                                    <i class="fas fa-box"></i>
+                                </span>Helpers</a>
+                        </li>
+                    
+                
+                    
+                        <li class="nav-item section-title">
+                            <a class="nav-link scrollto" href="http://localhost:4000/helpers/">
+                                <span class="theme-icon-holder mr-2">
+                                    <i class="fas fa-box"></i>
+                                </span>Helpers</a>
+                        </li>
+                    
+                
+            </ul>
+
+        </nav><!--//docs-nav-->
+    </div>
+</div>
+
+<div class="docs-content">
+    <div class="container">
+        <article class="docs-article">
+    <section class="docs-header">
+        <h1 class="docs-heading">Language Switcher<span class="docs-time">Last updated: 14/8/2020</span></h1>
+        <p> use builtin method or create your owen language switcher .</p>
+    </section>
+    <section class="docs-section">
+        <h1 class="section-heading">How to use</h1>
+        <p>
+            Learn How you can using languages switcher. <br />
+            LOGATY Allow visitors to select his own language in easy.
+        </p>
+    </section>
+    <section class="docs-section">
+        <p>
+            Logaty included 2 different switching types.
+        </p>
+        <ol>
+            <li>&lt;ul&gt; element</li>
+            <li>&lt;select&gt; element</li>
+        </ol>
+    </section>
+
+    <section class="docs-code-block">
+        
+        <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// &lt;ul&gt; element</span>
+<span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">switcher</span><span class="o">-&gt;</span><span class="nf">ul</span><span class="p">();</span>
+</code></pre></div></div>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// &lt;select&gt; element</span>
+<span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">switcher</span><span class="o">-&gt;</span><span class="nf">select</span><span class="p">();</span>
+</code></pre></div></div>
+<p><br />
+examples with output!</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">switcher</span><span class="o">-&gt;</span><span class="nf">ul</span><span class="p">();</span> <span class="c1">#output 1</span>
+    <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">switcher</span><span class="o">-&gt;</span><span class="nf">select</span><span class="p">();</span> <span class="c1">#output 2</span>
+</code></pre></div></div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- output 1 --&gt;</span>
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">'logaty-switcher'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">'logaty-switcher__li'</span> <span class="na">data-value=</span><span class="s">'ar'</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">'https://example.test/flags/ar.png'</span> <span class="nt">/&gt;</span>
+         <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'http://example.test?lang=ar'</span><span class="nt">&gt;</span> عربي <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">'logaty-switcher__li'</span> <span class="na">data-value=</span><span class="s">'en'</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">'https://example.test/flags/en.png'</span> <span class="nt">/&gt;</span>
+         <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'http://example.test?lang=en'</span><span class="nt">&gt;</span> English <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- output 2 --&gt;</span>
+<span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">'auto-generated'</span> <span class="na">class=</span><span class="s">'logaty-switcher'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">class=</span><span class="s">'logaty-switcher__option'</span> <span class="na">value=</span><span class="s">'http://example.test?lang=ar'</span><span class="nt">&gt;</span> عربي<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">class=</span><span class="s">'logaty-switcher__option'</span> <span class="na">value=</span><span class="s">'http://example.test?lang=en'</span><span class="nt">&gt;</span>English<span class="nt">&lt;/option&gt;</span>
+<span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">var</span> <span class="nx">select_element</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">auto-generated</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">select_element</span><span class="p">.</span><span class="nx">onchange</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">elem</span> <span class="o">=</span> <span class="p">(</span><span class="k">typeof</span> <span class="k">this</span><span class="p">.</span><span class="nx">selectedIndex</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">undefined</span><span class="dl">"</span> <span class="p">?</span> <span class="nb">window</span><span class="p">.</span><span class="nx">event</span><span class="p">.</span><span class="nx">srcElement</span> <span class="p">:</span> <span class="k">this</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">elem</span><span class="p">.</span><span class="nx">value</span> <span class="o">||</span> <span class="nx">elem</span><span class="p">.</span><span class="nx">options</span><span class="p">[</span><span class="nx">elem</span><span class="p">.</span><span class="nx">selectedIndex</span><span class="p">].</span><span class="nx">value</span><span class="p">;</span>
+    <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="nx">value</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+    </section>
+</article>
+
+<article class="docs-article">
+    <section class="docs-header">
+        <h1 class="docs-heading">Create Custom Switch</h1>
+        <p>
+            Create your own language switcher. <br />
+            LOGATY Allow you to create your own language switcher.
+        </p>
+    </section>
+
+    <section class="docs-code-block">
+        
+        <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">foreach</span> <span class="p">(</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">enabled</span><span class="p">()</span> <span class="k">as</span> <span class="nv">$lang</span> <span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// Natural Language Name</span>
+    <span class="k">echo</span>  <span class="s2">"Name: "</span> <span class="mf">.</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">nameN</span><span class="p">(</span><span class="nv">$lang</span><span class="p">)</span> <span class="mf">.</span> <span class="s2">"  - link: "</span> <span class="mf">.</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nb">link</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="nv">$lang</span><span class="p">);</span>
+    <span class="k">echo</span> <span class="s2">"&lt;br&gt;"</span><span class="p">;</span>
+    <span class="c1">// English Language Name</span>
+    <span class="k">echo</span>  <span class="s2">"Name: "</span> <span class="mf">.</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">name</span><span class="p">(</span><span class="nv">$lang</span><span class="p">)</span> <span class="mf">.</span> <span class="s2">"  - link: "</span> <span class="mf">.</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nb">link</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="nv">$lang</span><span class="p">);</span>
+
+    <span class="k">echo</span> <span class="s2">"&lt;hr&gt;"</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+    </section>
+
+    <section class="docs-section">
+        <p>
+            Learn more about <a href="/v2/helpers/">Helpers</a>
+        </p>
+        <ul>
+            <li>logaty()-&gt;enabled()</li>
+            <li>logaty()-&gt;nameN($lang)</li>
+            <li>logaty()-&gt;name($lang)</li>
+            <li>and more helpers !</li>
+        </ul>
+    </section>
+</article>
+
+    </div>
+</div>
+
+<footer class="footer">
+
+    <div class="footer-bottom text-center py-5">
+
+        <ul class="social-list list-unstyled pb-4 mb-0">
+            <li class="list-inline-item"><a href="https://github.com/anzawi"><i class="fab fa-github fa-fw"></i></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/Al_Anzawi"><i class="fab fa-twitter fa-fw"></i></a></li>
+        </ul><!--//social-list-->
+
+        <small class="copyright">LOGATY Library Developed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://github.com/anzawi" target="_blank">Mohammad Anzawi</a> for developers</small>
+        <br>
+        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+        <small class="copyright-design">Documentation Template Designed by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a></small>
+
+
+    </div>
+
+</footer>
+<!-- Javascript -->
+<script src="http://localhost:4000/assets/plugins/popper.min.js"></script>
+<script src="http://localhost:4000/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+
+<!-- Page Specific JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+<script src="http://localhost:4000/assets/js/highlight-custom.js"></script>
+<script src="http://localhost:4000/assets/plugins/jquery.scrollTo.min.js"></script>
+<script src="http://localhost:4000/assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>
+<script src="http://localhost:4000/assets/js/docs.js"></script>
+<script src="http://localhost:4000/assets/js/code.js"></script>
+<script src="http://localhost:4000/assets/js/search.js"></script>
+
+<script>
+    $(function() {
+        $('.clickable').click(function () {
+            var target = $(this).data('code')
+            $("#"+target).toggleClass('is-active')
+        });
+
+        $('.modal-close, .modal-background').click(function() {
+            $('.modal').removeClass('is-active');
+        })
+    })
+</script>
+
+</body>
+</html>

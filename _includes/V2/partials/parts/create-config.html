@@ -1,0 +1,29 @@
+<ul class="guides">
+    <li class="guide has-figure">
+        <div class="columns">
+            <div class="column">
+                <h5>Create Config File</h5>
+                <p>inside LOGATY directory go to -/config/- directory <br> &amp; create <i class="fas fa-code"></i>php file called what you want.</p>
+                <p>for <i class="fas fa-flask"></i> example I will create file called extra.php</p>
+            </div>
+            <div class="column">
+                {% capture getTranslationAdv %} {% include V2/code/extra-config.md %} {% endcapture %}
+                {{ getTranslationAdv | markdownify }}
+            </div>
+        </div>
+    </li>
+    <li class="guide">
+        <div class="columns">
+            <div class="column">
+                <h5>retrieve config</h5>
+                <p>
+                    get values fro your extra config
+                </p>
+            </div>
+            <div class="column">
+                {% capture retrieveExtra %} {% include V2/code/retrieve-extra.md %} {% endcapture %}
+                {{ retrieveExtra | markdownify }}
+            </div>
+        </div>
+    </li>
+</ul>

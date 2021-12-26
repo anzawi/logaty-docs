@@ -1,0 +1,8 @@
+I"�<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="k">return</span> <span class="p">[</span>
+        <span class="s1">'welcome'</span>      <span class="o">=&gt;</span> <span class="s1">'مرحبا بك في الصفحة الرئيسية للغاتي.'</span><span class="p">,</span>
+        <span class="s1">'description'</span> <span class="o">=&gt;</span> <span class="s1">'لغاتي هي مكتبة لتعدد اللغات, تسمح لك بتطوير موقعك القادم بعدة لغات بكل سهولة'</span>
+    <span class="p">];</span>
+
+</code></pre></div></div>
+:ET

@@ -1,0 +1,86 @@
+[
+{
+"method": "logaty()->config->get($configPath)",
+"description": "get config value",
+"use"        : "/config#get-value",
+"its_link": true
+},
+{
+"method"     : "logaty()->option($optionName)",
+"description": "get option value (get General configuration)",
+"use": "/config#get-options-value",
+"its_link": true
+},
+{
+"method": "logaty()->enabled()",
+"description": "get Enabled Languages in website, you can call it as method or property,",
+"use": "// return an array - all enabled languages\nvar_dump(logaty->enabled());",
+"its_link": false
+},
+{
+"method": "logaty()->isEnabled($languageCode)",
+"description": "check if language is enabled or not",
+"use": "// return an array - all enabled languages\nvar_dump(logaty->enabled());",
+"its_link": false
+},
+{
+"method": "logaty()->flag($lang = '')",
+"description": "get Language flag, return given language flag",
+"use"        : "// return(arabic flag path)\nvar_dump(logaty->flag('ar'));",
+"its_link": false
+},
+{
+"method": "logaty()->flags()",
+"description": "get all flags, you can use it as method or property",
+"use"        : "// return(all flags as array)\nvar_dump(logaty->flags());",
+"its_link": false
+},
+{
+"method"     : "logaty()->direction($lang = '')",
+"description": "get Language direction, return given language direction",
+"use": "// return(arabic direction)\nvar_dump(logaty()->direction('ar')); #rtl",
+"its_link": false
+},
+{
+"method": "logaty()->name($lang)",
+"description": "get Language name in english,  return given language name",
+"use": "// return(arabic Name in English)\nvar_dump(logaty()->name('ar')); # Arabic",
+"its_link"   : false
+},
+{
+"method": "logaty()->naturalName($lang)",
+"description": "get Language name in native language, given language name",
+"use": "// return(arabic Name in Native Language)\nvar_dump(logaty()->naturalName('ar')); # العربية",
+"its_link": false
+},
+{
+"method": "logaty()->path($path)",
+"description": "get path for given property",
+"use": "echo logaty()->path('lang_files');\n// return translation path directory",
+"its_link": false
+},
+{
+"method": "logaty()->default() <br> logaty()->default",
+"description": "get default language in your website",
+"use"        : "echo logaty()->default;\necho logaty()->default();",
+"its_link": false
+},
+{
+"method"     : "logaty()->current() <br> logaty()->current",
+"description": "get current (selected) language from visitor.",
+"use": "echo logaty()->current;\necho logaty()->current();",
+"its_link": false
+},
+{
+"method": "logaty()->link->create($link = '', $lang = '')",
+"description": "Generate Links with language parameter",
+"use": "/links/",
+"its_link"   : true
+},
+{
+"method": "logaty()->__($string = '', $lang = '')<br>logaty()->_x($string = '', $lang = '')",
+"description": "Get Text Translation",
+"use": "/translation/",
+"its_link": true
+}
+]

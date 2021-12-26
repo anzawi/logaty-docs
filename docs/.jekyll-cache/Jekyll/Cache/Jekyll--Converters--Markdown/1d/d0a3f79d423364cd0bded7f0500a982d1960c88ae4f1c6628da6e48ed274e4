@@ -1,0 +1,130 @@
+I"W<article class="docs-article" id="intro-section">
+    <section class="docs-header">
+        <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 26/12/2021</span></h1>
+        <section class="docs-intro">
+            <p><strong>LOGATY</strong> is a PHP Library which can help you rapidly develop your next Multilingual Website. <br />It can be used for CMS, Companies Site's, Personal site's, frameworks, etc.It has a lot of useful <br />
+                components to reduce the burden of create a Multilingual website for your next website.</p>
+            <p>
+                It's based on PHP Language and contains a lot of Functions to easily make your interactive Website.
+            </p>
+        </section><!--//docs-intro-->
+
+        <h5>Github Repository:</h5>
+        <p>Find <a class="theme-link" href="https://github.com/anzawi/logaty" target="_blank">Logaty Source Code in github</a></p>
+    </section>
+</article>
+
+<article class="docs-article" id="quick-start">
+    <section class="docs-header">
+        <h1 class="docs-heading">Quick Start</h1>
+        <section class="docs-intro">
+            <p>Start Using LOGATY. It won't take more than 5 minutes to start. Read the step-by-step guide.</p>
+        </section><!--//docs-intro-->
+
+        <ul class="guides">
+    <li class="guide has-figure">
+        <div class="columns">
+            <div class="column">
+                <h5>Create Translation Files</h5>
+                <p>inside LOGATY directory go to -local/languages- directory <br /> &amp; create files looks like figure.</p>
+            </div>
+            <div class="column"><img src="http://localhost:4000/assets/images/language-directory.PNG" alt="" /></div>
+        </div>
+    </li>
+    <li class="guide">
+        <div class="columns">
+            <div class="column">
+                <h5>Set Translation</h5>
+                <p>return array from each files (home.php)<br />
+                    
+                    <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">return</span> <span class="p">[</span> <span class="s1">'translation-key'</span> <span class="o">=&gt;</span> <span class="s1">'translation'</span> <span class="p">];</span>
+</code></pre></div></div>
+
+                </p>
+            </div>
+            <div class="column">
+                
+                <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+    en/home.php
+*/</span>
+    <span class="k">return</span> <span class="p">[</span>
+        <span class="s1">'welcome'</span> <span class="o">=&gt;</span> <span class="s1">'Welcome in Logaty Homepage'</span>
+    <span class="p">];</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="cd">/**
+    ar/home.php
+*/</span>
+    <span class="k">return</span> <span class="p">[</span>
+        <span class="s1">'welcome'</span> <span class="o">=&gt;</span> <span class="s1">'مرحبا بك في الصفحة الرئيسية للغاتي'</span>
+    <span class="p">];</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+            </div>
+        </div>
+    </li>
+    <li class="guide">
+        <div class="columns">
+            <div class="column">
+                <h5>Get Translation</h5>
+                <p>return translation as selected language or as language parameter you send</p>
+            </div>
+            <div class="column">
+                
+                <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="c1">// as selected language</span>
+    <span class="cm">/* 1 */</span> <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">_x</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">);</span>
+    <span class="cm">/* 2 echo directly */</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">__</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">);</span>
+
+    <span class="c1">// as given language parameter</span>
+    <span class="cm">/* 1 */</span> <span class="k">echo</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">_x</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">,</span> <span class="s1">'ar'</span><span class="p">);</span>
+    <span class="cm">/* 2 echo directly */</span> <span class="nf">logaty</span><span class="p">()</span><span class="o">-&gt;</span><span class="nf">__</span><span class="p">(</span><span class="s1">'home.welcome'</span><span class="p">,</span> <span class="s1">'en'</span><span class="p">);</span>
+
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
+
+            </div>
+        </div>
+    </li>
+</ul>
+
+    </section>
+</article>
+
+<section class="cta-section text-center py-5 theme-bg-light position-relative">
+    <div class="theme-bg-shapes-right"></div>
+    <div class="theme-bg-shapes-left"></div>
+    <div class="container">
+        <h3 class="mb-2 text-black-50 mb-3">Need a Help ?</h3>
+        <div class="section-intro text-black-50 mb-3 single-col-max mx-auto">
+            feel free to contact me on &lt; m.anzawi2013@gmail.com &gt;
+        </div>
+        <div class="pt-3 text-center">
+            <a href="https://github.com/anzawi/logaty/issues" class="btn btn-secondary">
+                Visit Community
+            </a>
+        </div>
+    </div>
+</section>
+<!--//cta-section-->
+<section class="cta-section text-center py-5 theme-bg-dark position-relative">
+    <div class="theme-bg-shapes-right"></div>
+    <div class="theme-bg-shapes-left"></div>
+    <div class="container">
+        <h3 class="mb-2 text-white mb-3">Fork On Github</h3>
+        <div class="section-intro text-white mb-3 single-col-max mx-auto">
+            Fork LOGATY Library on Github and help me to develop something awesome
+        </div>
+        <div class="pt-3 text-center">
+            <a href="https://github.com/anzawi/logaty" class="btn btn-light">
+                Fork Repository
+            </a>
+        </div>
+    </div>
+</section>
+<!--//cta-section-->
+:ET
