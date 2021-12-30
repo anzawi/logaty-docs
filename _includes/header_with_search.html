@@ -35,7 +35,7 @@
             <ul class="section-items list-unstyled nav flex-column pb-3">
                 {% assign pages = site.pages | sort: "nav_order" %}
                 {% for item in pages %}
-                    {% if item.nav-exclude == false %}
+                    {% if item.nav-exclude == false && item.version == 3 %}
                         <li class="nav-item section-title">
                             <a class="nav-link scrollto{% if page.url contains item.url %} active{% endif %}" href="{{ item.url | absolute_url  }}">
                                 <span class="theme-icon-holder mr-2">
