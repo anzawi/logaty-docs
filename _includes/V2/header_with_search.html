@@ -36,12 +36,14 @@
                 {% assign pages = site.pages | sort: "nav_order" %}
                 {% for item in pages %}
                     {% if item.nav-exclude == false %}
-                        <li class="nav-item section-title">
-                            <a class="nav-link scrollto{% if page.url contains item.url %} active{% endif %}" href="{{ item.url | absolute_url  }}">
-                                <span class="theme-icon-holder mr-2">
-                                    <i class="fas fa-{{ item.icon }}"></i>
-                                </span>{{ item.title }}</a>
-                        </li>
+                        {% if item.version == 2 %}
+                            <li class="nav-item section-title">
+                                <a class="nav-link scrollto{% if page.url contains item.url %} active{% endif %}" href="{{ item.url | absolute_url  }}">
+                                    <span class="theme-icon-holder mr-2">
+                                        <i class="fas fa-{{ item.icon }}"></i>
+                                    </span>{{ item.title }}</a>
+                            </li>
+                        {% endif %}
                     {% endif %}
                 {% endfor %}
             </ul>
