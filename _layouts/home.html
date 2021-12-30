@@ -2,14 +2,28 @@
 <html lang="en">
 {% include head.html %}
 <body>
-{% include header.html %}
-{% include search.html %}
-<div class="page-content">
-    <div class="container">
-        {{ content }}
+    
+{% if page.url contains '/v2/' %}
+    {% include V2/header.html %}
+    {% include V2/search.html %}
+    <div class="page-content">
+        <div class="container">
+            {{ content }}
+        </div>
     </div>
-</div>
 
-{% include footer.html %}
+    {% include V2/footer.html %}
+    
+{% else %}    
+    {% include header.html %}
+    {% include search.html %}
+    <div class="page-content">
+        <div class="container">
+            {{ content }}
+        </div>
+    </div>
+
+    {% include footer.html %}
+{% endif %}
 </body>
 </html>
