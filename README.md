@@ -1,3 +1,4 @@
+<meta name="algolia-site-verification"  content="656B1A124842283B" />
 # logaty-docs
 
 just a jekyll theme for my open source libraries and tools documentation.
